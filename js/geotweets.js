@@ -109,9 +109,10 @@ app.controller('TweetsController', ['$scope', '$http', function($scope, $http) {
     	lng2 = lng2.toFixed(2);
 
     	//the url for the backend RESTful api
-    	var url = "http://localhost:3000/tweets?" + "geo=" + lng1 + "," + lat1 + "," + lng2 + "," + lat2
+    	//var url = "http://localhost:4000/tweets?" + "geo=" + lng1 + "," + lat1 + "," + lng2 + "," + lat2
     				+ "&key=" + $scope.topic;  
-
+    	var url = "https://morning-dawn-4464.herokuapp.com/" + "/tweets?" + "geo=" + lng1 + "," + lat1 + "," + lng2 + "," + lat2
+    				+ "&key=" + $scope.topic;  
     	//fetch tweets using the backend API
         $http.get(url).
           //upon success, refresh the data and update the views
