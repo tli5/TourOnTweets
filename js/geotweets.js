@@ -111,7 +111,7 @@ app.controller('TweetsController', ['$scope', '$http', function($scope, $http) {
     	//the url for the backend RESTful api
     	//var url = "http://localhost:4000/tweets?" + "geo=" + lng1 + "," + lat1 + "," + lng2 + "," + lat2
     				+ "&key=" + $scope.topic;  
-    	var url = "https://tourontweet.herokuapp.com/" + "tweets?" + "geo=" + lng1 + "," + lat1 + "," + lng2 + "," + lat2
+    	var url = "https://tourontweets.herokuapp.com/" + "tweets?" + "geo=" + lng1 + "," + lat1 + "," + lng2 + "," + lat2
     				+ "&key=" + $scope.topic;  
     	//fetch tweets using the backend API
         $http.get(url).
