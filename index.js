@@ -16,20 +16,20 @@
     </script>
   </head>
   <body >
-    /*the app to fetch and display tweets*/
+
     <section id="controllerForm" ng-controller="TweetsController" >
-      /*taking inputs to fetch tweets*/
+
       <input ng-model="topic" type="text" placeholder="Topic to track">
       <input id="toggleMap" type="button" value="Toggle Map">
       <input id="getTweets" ng-click="fetchTweets()" class="update-tweets" type="button" value="Get Tweets">
 
-      /*display using angular js*/
+
       <ul id="Tweets-List" data-role="listview">
         <li ng-repeat="tweet in tweets" >
           <a href="https://twitter.com/{{tweet['user']['screen_name']}}" class="ui-link-inherit">
             <img ng-src="{{tweet['user']['image_url']}}" class="ui-li-thumb"/>
-            <h3 class="ui-li-heading">User: {{tweet["user"]["name"]}}</h3>
-            <p class="ui-li-desc">Tweet: {{tweet["text"]}}  </p>
+            <h3 class="ui-li-heading">{{tweet["user"]["name"]}}</h3>
+            <p class="ui-li-desc">{{tweet["text"]}}  </p>
 
           </a>
           
