@@ -75,4 +75,6 @@ app.get('/tweets', function(req,res) {
   fetchTweets(locs, key, res);
 
 });
-app.listen(3000);
+app.listen(4000);
+
+module.exports = app;
