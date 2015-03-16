@@ -1,0 +1,19 @@
+#TourMap {
+	height: 400px;
+}
+
+#mapPanel {
+	width: 60%;
+}
+
+@media (max-width: 600px) {
+	#mapPanel {
+		width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	#mapPanel {
+		width: 80%;
+	}
+}
